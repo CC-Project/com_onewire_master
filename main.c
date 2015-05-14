@@ -9,8 +9,11 @@
 #include "src/onewire.h"
 #include <stdio.h>
 
-int main_master(void)
+void main_master();
+
+void main_master()
 {
+    /*
     uint32_t nb_data = 8;
     uint8_t data = 9;
 
@@ -26,4 +29,5 @@ int main_master(void)
 //        ow_write_bit((data & _BV(i)) ? 1 : 0);
 
     for(;;) {}
+    */
 }

@@ -2,8 +2,8 @@
 *	Configuration file for the One Wire bus
 **/
 
-#ifndef CONFIG_OW_H
-#define CONFIG_OW_H
+#ifndef CONFIG_OW_M_H
+#define CONFIG_OW_M_H
     #pragma once
     #define DEBUG // Enable debugging
     #ifdef DEBUG
