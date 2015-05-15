@@ -19,8 +19,7 @@
 	uint8_t bus_read(void);
 
 	/*	One Wire functions	*/
-	// Resets the bus. Returns 1 if a device was found, 0 otherwise
-	uint8_t	ow_reset(void);
+	uint8_t	ow_reset(void); // Resets the bus. Returns 1 if a device was found, 0 otherwise
 
 	void	ow_write_bit(uint8_t bit);
 	uint8_t	ow_read_bit(void);

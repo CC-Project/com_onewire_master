@@ -5,7 +5,6 @@
 
 #include "onewire.h"
 
-/**	Functions prototypes	**/
 /*	Utility functions	*/
 void bus_low(void)
 {
