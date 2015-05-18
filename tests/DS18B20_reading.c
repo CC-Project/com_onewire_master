@@ -5,11 +5,11 @@
  * No crc verification is made.
  */
 
-#include "config.h"
-#include "src/onewire.h"
-//#ifdef DEBUG
-//    #include "../../lib_uart/uart.h"
-//#endif
+#include "../config.h"
+#include "../src/onewire.h"
+#ifdef DEBUG
+    #include "../../lib_uart/uart.h"
+#endif
 #include <stdio.h>
 
 int main(void)

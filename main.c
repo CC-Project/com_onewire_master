@@ -9,7 +9,7 @@
 #include "src/onewire.h"
 #include <stdio.h>
 
-int main()
+void main(void)
 {
     uint32_t nb_data = 8;
     uint8_t data = 9;
