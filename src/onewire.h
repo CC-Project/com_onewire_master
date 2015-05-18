@@ -5,8 +5,13 @@
 #ifndef ONEWIRE_H_
 #define ONEWIRE_H_
 	#include "../config.h"
-	#include <avr/io.h>
-	#include <util/delay.h>
+
+	#ifdef __AVR__
+        #include <avr/io.h>
+        #include <util/delay.h>
+    #else
+        #include <inttypes.h>
+    #endif // __AVR__
 
 	#define LOW 0
 	#define HIGH 1

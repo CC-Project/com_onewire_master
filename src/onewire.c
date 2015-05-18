@@ -15,7 +15,7 @@ void bus_low(void)
 
 void bus_release(void)
 {
-	OW_BUS_PORT |= OW_BUS_PIN_MASK;		// Enable the pull up resistor, or set the bus high
+	//OW_BUS_PORT |= OW_BUS_PIN_MASK;		// Enable the pull up resistor, or set the bus high
 	OW_BUS_DDR  &= ~OW_BUS_PIN_MASK;	// Make the pin as input
 }
 
