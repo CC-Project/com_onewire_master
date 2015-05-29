@@ -16,5 +16,5 @@
     #define OW_BUS_DDR DDRB
     #define OW_BUS_PIN PINB
     #define OW_BUS_PORT PORTB
-    #define OW_BUS_PIN_MASK	_BV(1)
+    #define OW_BUS_PIN_MASK	_BV(0)
 #endif
