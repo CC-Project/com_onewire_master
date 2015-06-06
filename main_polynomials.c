@@ -1,8 +1,4 @@
 /*
- * Main file. It is assumed only one DS18B20 is connected to the bus.
- * See datasheet to connect the sensors.
- * The data pin can be changed in the config.h file
- * No crc verification is made.
  */
 
 #include "../code_polynomials/config_polynomials.h"
@@ -25,8 +21,10 @@ void main(void)
 	
     while(1)
     {
-        for(uint8_t i = 0; i < N; i++)
+        for(uint8_t i = 0; i < N; i++){
             ow_write_bit(data_get(i,encoded));
+			_delay_us(50);
+		}
         _delay_ms(5000);
     }
 }
