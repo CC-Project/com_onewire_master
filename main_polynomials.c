@@ -10,10 +10,11 @@
 #include <avr/interrupt.h>
 #include <stdio.h>
 
+Poly generator;
+
 void main(void)
 {
-    //uint8_t data = 9;
-	Poly data = data_generate(K)
+	Poly data = data_generate(K);
 	data_set(0, 1, data);
 	data_set(2, 1, data);
 	 
