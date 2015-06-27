@@ -17,12 +17,17 @@ void main(void)
 {
 	poly_init_generator();
 	Poly data = data_generate(K);
-	
+//    uint8_t str[10];
+//    uart_init(0x19);
+//    sprintf(str, "%d", freeRam());
+//    uart_tx_str(str);
 	//data_set(0, 1, data);
 	//data_set(2, 1, data);
-	 //
-	//Poly encoded = poly_encode(data);
-	//
+    bus_low();
+    bus_release();
+    Poly encoded = poly_encode(data);
+    bus_low();
+    bus_release();
     //while(1)
     //{
         //for(uint8_t i = 0; i < N; i++){
